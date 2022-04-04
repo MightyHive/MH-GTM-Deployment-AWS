@@ -433,7 +433,7 @@ echo "Register service as a scalable target with Application Auto Scaling"
 aws application-autoscaling register-scalable-target \
     --service-namespace ecs \
     --scalable-dimension ecs:service:DesiredCount \
-    --resource-id "service/$AMEX_PROD_CLUSTER_NAME/MH-AMEX" \
+    --resource-id "service/$AMEX_PROD_CLUSTER_NAME/MH-GMT-Deployment-AWS" \
     --min-capacity 3 \
     --max-capacity 10 \
     --region "$AMEX_REGION"
@@ -445,5 +445,5 @@ aws application-autoscaling put-scaling-policy \
     --policy-type TargetTrackingScaling \
     --service-namespace ecs \
     --scalable-dimension ecs:service:DesiredCount \
-    --resource-id "service/$AMEX_PROD_CLUSTER_NAME/MH-AMEX" \
+    --resource-id "service/$AMEX_PROD_CLUSTER_NAME/MH-GMT-Deployment-AWS" \
     --target-tracking-scaling-policy-configuration file://scaling-policy.json
