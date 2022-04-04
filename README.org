@@ -1,0 +1,23 @@
+#+BEGIN_SRC sh
+export AMEX_AWS_ACCESS_KEY_ID=""
+export AMEX_AWS_SECRET_ACCESS_KEY=""
+export AMEX_CONTAINER_CONFIG=""
+export AMEX_CERTIFICATE_ARN=""
+
+export AMEX_REGION="us-east-1"
+export AMEX_ROLE_NAME="ecsTaskExecutionRole"
+export AMEX_ROLE_JSON="task-execution-assume-role.json"
+export AMEX_PROFILE_NAME="server-gtm-profile"
+
+export AMEX_PREVIEW_CLUSTER_NAME="server-gtm-preview-cluster"
+export AMEX_PREVIEW_CONFIG_NAME="server-gtm-preview-config"
+export AMEX_PREVIEW_LOAD_BALANCER_NAME="server-gmt-preview-load-balancer"
+export AMEX_PREVIEW_TARGET_GROUP_NAME="server-gmt-preview-target-group"
+export AMEX_PREVIEW_CONTAINER_NAME="server-gmt-preview-container"
+
+export AMEX_PROD_CLUSTER_NAME="server-gtm-cluster"
+export AMEX_PROD_CONFIG_NAME="server-gtm-config"
+export AMEX_PROD_LOAD_BALANCER_NAME="server-gmt-load-balancer"
+export AMEX_PROD_TARGET_GROUP_NAME="server-gmt-target-group"
+export AMEX_PROD_CONTAINER_NAME="server-gmt-container"
+#+END_SRC
