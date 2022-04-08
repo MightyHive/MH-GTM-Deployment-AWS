@@ -31,8 +31,7 @@ options when it comes to server-side GTM deployment.
 
 
 ## Architecture Diagram
-![architecture](aws_diagram.png "Architecture Diagram on AWS")
-<img src="aws_diagram.png" alt="architecture" width="750" height="300">
+<img src="aws_diagram.png" alt="architecture" width="1110" height="700">
 
 ## Resources used on AWS
 There are multiple resources needed to deploy server-side GTM properly. They can
