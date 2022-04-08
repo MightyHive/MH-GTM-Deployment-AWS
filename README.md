@@ -84,7 +84,7 @@ This role will be assigned to ECS service.
 Install AWS CLI. Please refer [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
 
 ### Step 2:
-Go into deploy_aws.sh script, and fill out all the parameters, and save the
+Go into `deploy_aws.sh` script, and fill out all the parameters, and save the
 file.
 
 ### Step 3:
