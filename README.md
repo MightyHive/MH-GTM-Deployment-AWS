@@ -101,3 +101,8 @@ chmod +x deploy_aws.sh
 
 Please note that in most cases, these two steps should be done by the admins
 from the clients' side since these are sensitive resources.
+
+## Security Measures
+1. HTTPS over SSL between the client's site and load balancer.
+2. Security group implemented to only allow traffic in port 443 to flow into
+   VPC.
