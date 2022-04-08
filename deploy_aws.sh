@@ -1,8 +1,14 @@
 ###############################################################################
-#                           Things not done in this script                    #
+#                                     Checklist                               #
 ###############################################################################
-# 1. Get SSL certificate in certificate manager
-# 2. Connnet load balancer with the domains in Route 53.
+# 1. Before Running the script, make sure to fill out all the following
+# parameters.
+#
+# 2. Apply a certificate for the following domains:
+#       tagging.example.com
+#       debug.tagging.example.com
+#
+# 3. Get the certificate ARN, and put it into AMEX_CERTIFICATE_ARN parameter.
 
 ###############################################################################
 #                                    Parameters                               #
