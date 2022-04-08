@@ -55,13 +55,14 @@ This role will be assigned to ECS service.
   gives you full control over your virtual networking environment, including
   resource placement, connectivity, and security. The following resources need
   to be provisioned to build the proper VPC:
-  1. Subnets in different availability zone.
-  2. Internet Gateway.
-  3. Route table.
-  4. Security group. 
+  ** Subnets in different availability zone.
+  ** Internet Gateway.
+  ** Route table.
+  ** Security group. 
 
   For the detailed explanation and configuration, please see
   the deployment script.
+
 * [Application Load
   Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html):
   A load balancer serves as the single point of contact for clients. The load
