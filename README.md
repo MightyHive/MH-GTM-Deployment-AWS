@@ -55,10 +55,10 @@ This role will be assigned to ECS service.
   gives you full control over your virtual networking environment, including
   resource placement, connectivity, and security. The following resources need
   to be provisioned to build the proper VPC:
-  ** Subnets in different availability zone.
-  ** Internet Gateway.
-  ** Route table.
-  ** Security group. 
+  * Subnets in different availability zone.
+  * Internet Gateway.
+  * Route table.
+  * Security group. 
 
   For the detailed explanation and configuration, please see
   the deployment script.
