@@ -106,3 +106,12 @@ from the clients' side since these are sensitive resources.
 1. HTTPS over SSL between the client's site and load balancer.
 2. Security group implemented to only allow traffic in port 443 to flow into
    VPC.
+
+## Notes
+1. Container health check path is `/healthy`.
+2. There is no correct configuration for ECS cpu and memory usage. It all based
+   on the workload from the client's side. It is recommended to start from the
+   default in the script, and set a higher max instance number for autoscaling
+   (horizontal scaling). If 10 containers are still not enough to handle the
+   workload, it is time to scale container vertically, which is to increase cpu
+   and memory.
