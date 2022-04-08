@@ -78,3 +78,26 @@ This role will be assigned to ECS service.
   deploy public and private Secure Sockets Layer/Transport Layer Security
   (SSL/TLS) certificates for use with AWS services and your internal connected
   resources.
+
+## Deployment
+### Step 1:
+Install AWS CLI. Please refer [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
+
+### Step 2:
+Go into deploy_aws.sh script, and fill out all the parameters, and save the
+file.
+
+### Step 3:
+Run the following command in the terminal.
+```sh
+chmod +x deploy_aws.sh
+./deploy_aws.sh
+```
+
+## Things not covered by the script
+1. Get SSL certificate in certificate manager, once it is complete, put that ARN
+   into the CERTIFICATE_ARN parameter.
+2. Connect the load balancers to the domains using A RECORD in Route 53.
+
+Please note that in most cases, these two steps should be done by the admins
+from the clients' side since these are sensitive resources.
