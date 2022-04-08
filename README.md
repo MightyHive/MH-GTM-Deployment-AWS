@@ -7,7 +7,7 @@
   <h3 align="center">Server-Side GTM Deployment on AWS</h3>
 
   <p align="center">
-    An alternative deployment method for server-side GTM to GCP.
+    An alternative deployment method for server-side GTM.
   </p>
 </p>
 
