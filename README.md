@@ -30,6 +30,9 @@ provides. It will prevent vendor lock-in, and allows clients to have more
 options when it comes to server-side GTM deployment.
 
 
+## Architecture Diagram
+![architecture](aws_diagram.png "Architecture Diagram on AWS")
+
 ## Resources used on AWS
 There are multiple resources needed to deploy server-side GTM properly. They can
 be divided into to three categories: IAM, deployment, and network resources.
@@ -69,3 +72,9 @@ This role will be assigned to ECS service.
   balancer distributes incoming application traffic across multiple targets,
   such as ECS containers, in multiple Availability Zones. This increases the
   availability of your application.
+
+* [Certificate Manager](https://aws.amazon.com/certificate-manager/): AWS
+  Certificate Manager is a service that lets you easily provision, manage, and
+  deploy public and private Secure Sockets Layer/Transport Layer Security
+  (SSL/TLS) certificates for use with AWS services and your internal connected
+  resources.
